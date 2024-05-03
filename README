@@ -1,0 +1,7 @@
+# About
+This Dockerfile will build an image running the WildFly application 
+server with a data source named java:/PostgreDS. That expects a running
+postgres instance on jdbc:postgresql://localhost:5432/postgres. 
+
+The image is based on the Fedora 40 image and isn't intended for use outside 
+of integration tests. Use Docker compose to get connectivity on localhost.
