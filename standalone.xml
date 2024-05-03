@@ -136,7 +136,7 @@
                     <security user-name="sa" password="sa"/>
                 </datasource>
                 <datasource jndi-name="java:/PostgreDS" pool-name="PostgrePool">
-                    <connection-url>jdbc:postgresql://localhost:5432/postgres</connection-url>
+                    <connection-url>jdbc:postgresql://postgres:5432/postgres</connection-url>
                     <driver>postgresql-42.7.3.jar</driver>
                     <security user-name="postgres" password="postgres"/>
                 </datasource>
