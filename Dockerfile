@@ -15,4 +15,5 @@ RUN curl -L "https://jdbc.postgresql.org/download/postgresql-${PGJDBC_VERSION}.j
 EXPOSE 8080
 EXPOSE 9990
 COPY standalone.xml /home/wildfly/wildfly/standalone/configuration/standalone.xml
+COPY mgmt-users.properties /home/wildfly/wildfly/standalone/configuration/mgmt-users.properties
 CMD bin/standalone.sh
