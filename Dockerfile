@@ -14,6 +14,8 @@ WORKDIR wildfly
 RUN curl -L "https://jdbc.postgresql.org/download/postgresql-${PGJDBC_VERSION}.jar" -o standalone/deployments/postgresql-${PGJDBC_VERSION}.jar
 EXPOSE 8080
 EXPOSE 9990
+EXPOSE 8787
+COPY standalone.conf /home/wildfly/wildfly/bin/standalone.conf
 COPY standalone.xml /home/wildfly/wildfly/standalone/configuration/standalone.xml
 COPY mgmt-users.properties /home/wildfly/wildfly/standalone/configuration/mgmt-users.properties
 CMD bin/standalone.sh
